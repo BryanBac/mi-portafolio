@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
 import LoginBar from '@/components/login_bar'
 import Menu from '@/components/menu'
 
@@ -17,8 +16,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <LoginBar></LoginBar>
-      <Menu></Menu>
-      
+      <Menu className="root2"></Menu>
+      <style jsx>
+        {`
+          .root2 {
+            display: flex,
+            justify-content: space-around,
+          }
+        `}
+      </style>
     </>
   )
 }
