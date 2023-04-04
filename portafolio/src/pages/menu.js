@@ -3,20 +3,20 @@ import Link from "next/link";
 export default function Menu() {
   return (
     <div>
-      <div className="root">
-        <Link href="#" replace className="botones">
+      <div className="menu">
+        <Link href="/about" className="botones">
           <p>Sobre Mi</p>
         </Link>
-        <Link href="#" replace className="botones">
+        <Link href="/recent-proyects" className="botones">
           <p>Proyectos Recientes</p>
         </Link>
-        <Link href="#" replace className="foto">
+        <Link href="#" className="foto">
           Holi
         </Link>
-        <Link href="#" replace className="botones">
+        <Link href="/blog" className="botones">
           <p>Blog</p>
         </Link>
-        <Link href="#" replace className="botones">
+        <Link href="/education" className="botones">
           <p>Educación</p>
         </Link>
       </div>

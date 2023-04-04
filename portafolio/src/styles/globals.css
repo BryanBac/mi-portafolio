@@ -12,7 +12,6 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
   background: #191A52;
 }
 
@@ -27,7 +26,7 @@ a {
   }
 }
 
-.root {
+.menu {
   display: flex;
   justify-content: space-around;
 }
@@ -55,4 +54,44 @@ a {
   justify-content: flex-end;
   align-content: flex-end;
   padding: 2%;
+}
+.cardContainer{
+  display: block;
+  width: 60%;
+}
+.cardFirst{
+  background-color: rgba(25, 163, 82, 0.15);
+}
+.cardSecond{
+  background-color: rgba(217, 217, 217, 0.2);
+}
+.centrar{
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+.loginContainer{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100vh;
+}
+.loginLeft{
+  background: #191A52;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginRight{
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hijoRight{
+  display: block;
+}
+input{
+  background-color: white;
+  color: black
 }
