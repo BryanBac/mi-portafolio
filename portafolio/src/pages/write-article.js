@@ -14,6 +14,21 @@ export default function Education() {
       <div>
         <LoginBar></LoginBar>
         <Menu></Menu>
+        <div className="articleContainer">
+          <div className="Title">
+            <div>
+                Titulo
+            </div>
+            <input type="" name="" value=""/>
+            <button type="">Publicar</button>
+          </div>
+          <div className="Content">
+            <div>
+            este sera el contenido    
+            </div>
+            
+            </div>
+        </div>
       </div>
     </>
   );
