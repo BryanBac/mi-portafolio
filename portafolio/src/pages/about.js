@@ -14,6 +14,35 @@ export default function About() {
       <div>
         <LoginBar></LoginBar>
         <Menu></Menu>
+        <div className="loginContainer">
+          <div className="aboutLeft">
+            <div className="blockAbout">
+              <div>
+                <h3>¿Quien Soy?</h3>
+              </div>
+              <div className="inputAbout">
+                <div className="ocuparTodoDiv input"></div>
+              </div>
+              <div>
+                <h3>Mi experencia</h3>
+              </div>
+              <div className="inputAbout">
+                <div className="ocuparTodoDiv input"></div>
+              </div>
+              <div>
+                <h3>Informaión de Contacto</h3>
+              </div>
+              <div className="inputAbout">
+                <div className="ocuparTodoDiv input"></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img src="./pages/Img1.jpg" alt="No se encontró" />
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import LoginBar from "@/pages/login_bar";
 import Menu from "@/pages/menu";
+import Scholars from "@/components/scholar-cards";
 
 export default function Education() {
   return (
@@ -14,6 +15,7 @@ export default function Education() {
       <div>
         <LoginBar></LoginBar>
         <Menu></Menu>
+        <Scholars></Scholars>
       </div>
     </>
   );

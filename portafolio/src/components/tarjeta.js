@@ -7,6 +7,7 @@ export default function Tarjeta() {
         pathname: "/article",
         query: { name: "test" },
       }}
+      className="LinkCard"
     >
       <div className="cardContainer">
         <div className="cardFirst">as</div>

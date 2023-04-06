@@ -54,14 +54,23 @@ a {
   align-content: flex-end;
   padding: 2%;
 }
+.LinkCard{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .cardContainer {
   display: block;
-  width: 60%;
+}
+.cardContainer{
+  width: 70%;
 }
 .cardFirst {
+  width: 100%;
   background-color: rgba(25, 163, 82, 0.15);
 }
 .cardSecond {
+  width: 100%;
   background-color: rgba(217, 217, 217, 0.2);
 }
 .centrar {
@@ -69,9 +78,14 @@ a {
   justify-content: center;
   margin-top: 2%;
 }
-.loginContainer {
+.loginContainer, .aboutContainer {
   display: grid;
   grid-template-columns: 50% 50%;
+}
+.blockAbout div{
+  margin-top: 2%;
+}
+.loginContainer{
   height: 100vh;
 }
 .loginLeft {
@@ -87,8 +101,13 @@ a {
   justify-content: center;
   align-items: center;
 }
-.hijoRight {
+.hijoRight, .blockAbout {
   display: block;
+}
+.blockAbout{
+  height: 80%;
+  width: 80%;
+  margin: 0;
 }
 input {
   background-color: white;
@@ -98,7 +117,7 @@ input {
   margin: 3% 10%;
 }
 .articleContainer div:nth-child(2) {
-  margin: 3% 5%;
+  margin: 5%;
 }
 .Title, .Content {
   display: flex;
@@ -106,12 +125,44 @@ input {
   background: rgba(25, 163, 82, 0.1);
   border: 1px solid #000000;
 }
-.Title{
+.Title, .scholarContainer{
   width: 80%;
+}
+.centrarScholar{
+  display: block;
+  margin: 3% 10%;
+}
+.scholarContainer div:nth-child(1){
+  background: rgba(25, 163, 82, 0.15);
+}
+.scholarContainer div:nth-child(2){
+  background: rgba(217, 217, 217, 0.5);
+}
+.scholarContainer{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 100%;
+  margin-bottom: 5%;
 }
 .Content div:nth-child(1) {
   margin: 3% 1%;
   width: 90%;
   border: 1px solid #000000;
   padding: 1%;
+}
+.aboutLeft{
+  display: flex;
+  margin: 8% 0%;
+  justify-content: center;
+}
+.ocuparTodoDiv{
+  width: 100%;
+  height: 100%;
+}
+.input{
+  background-color: rgba(25, 163, 82, 0.15);
+  color: white;
+}
+.inputAbout{
+  height: 30%;
 }
