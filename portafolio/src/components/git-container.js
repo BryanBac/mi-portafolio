@@ -1,4 +1,11 @@
 import { useEffect, useState } from "react";
+import { Octokit } from "octokit";
+
+const octokit = new Octokit({ 
+  auth: process.env.TOKEN,
+});
+
+
 
 export default function GitContainer() {
   const [search, setSearch] = useState("");
@@ -6,11 +13,11 @@ export default function GitContainer() {
   const fetchUser = async () => {
     try {
       const response = await fetch(
-        `https://api.github.com/users/${search}/repos`
+        `https://api.github.com/users/BryanBac/repos`
       );
       const data = await response.json();
       setUser(data);
-      console.log(user[0]);
+      console.log(user);
     } catch (error) {
       console.log("error", error.message);
     }
