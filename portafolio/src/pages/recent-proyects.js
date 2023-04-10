@@ -3,7 +3,9 @@ import LoginBar from "@/pages/login_bar";
 import Menu from "@/pages/menu";
 import GitContainer from "@/components/git-container";
 
+
 export default function RecentProyects() {
+
   return (
     <>
       <Head>
@@ -16,7 +18,9 @@ export default function RecentProyects() {
         <LoginBar></LoginBar>
         <Menu></Menu>
         <div className="centrar">
-          <GitContainer></GitContainer>
+          <GitContainer>
+            
+          </GitContainer>
         </div>
       </div>
     </>

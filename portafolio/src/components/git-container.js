@@ -8,7 +8,6 @@ const octokit = new Octokit({
 
 
 export default function GitContainer() {
-  const [search, setSearch] = useState("");
   const [user, setUser] = useState({});
   const fetchUser = async () => {
     try {
@@ -18,18 +17,13 @@ export default function GitContainer() {
       const data = await response.json();
       setUser(data);
       console.log(user);
+      return data;
     } catch (error) {
       console.log("error", error.message);
     }
   };
   return (
     <div>
-      <input
-        type="text"
-        placeholder="Search for User"
-        onChange={(e)=>setSearch(e.target.value)}
-        className="input_search"
-      />
       <button onClick={fetchUser}>Buscar</button>
       <div className="TwoGrid"></div>
     </div>
