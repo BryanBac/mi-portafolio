@@ -11,7 +11,7 @@ export default function GitContainer({lista}) {
     <Proyecto key={item.name} name={item.name} description={item.description} link={item.link}></Proyecto>
   ))
   return (
-    <div>
+    <div className="proyectosRecientes">
       <div className="aboutContainer">
         {elementos}
       </div>

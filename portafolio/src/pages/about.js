@@ -50,6 +50,8 @@ export default function About() {
                 <div className="ocuparTodoDiv input">
                   Email: bryanbacparedes@gmail.com<br></br>
                   Facebook: <a href="https://www.facebook.com/bryan.bac.79">Bryan Bac</a><br></br>
+                  Linkedin: <a href="https://www.linkedin.com/in/bryan-paredes-8024b51b9/">Bryan Paredes</a><br></br>
+                  Canal de Youtube: <a href="https://www.youtube.com/@bryanbac6322">ᛒᚱᛃᚨᚾ ᛒᚨᚲ [Bryan Bac]</a><br></br>
                   Instagram: <a href="https://www.instagram.com/bryan_bac/">Bryan Bac</a>
                 </div>
               </div>
@@ -57,7 +59,7 @@ export default function About() {
           </div>
           <div>
             <div>
-              <img src="./pages/Img1.jpg" alt="No se encontró" />
+              <img src="" alt="No se encontró" />
             </div>
           </div>
         </div>
