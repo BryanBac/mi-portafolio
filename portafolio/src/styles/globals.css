@@ -30,6 +30,13 @@ a {
   margin: 8% 0%;
   justify-content: center;
 }
+.aboutRight{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  position: relative;
+}
 .articleContainer div:nth-child(1) {
   margin: 3% 10%;
 }
@@ -178,6 +185,11 @@ max-height: 70vh;
   grid-template-columns: 30% 70%;
   width: 100%;
   margin-bottom: 5%;
+}
+.styledImage{
+  margin: 5% 0%;
+  width: 50%;
+  height: 100%;
 }
 .ocuparTodoDiv {
   width: 100%;

@@ -58,15 +58,14 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div>
-            <div>
-              <Image
-              src="/maxresdefault.jpg"
+          <div className="aboutRight">
+             <Image
+              src="/saco.jpg"
               alt="Picture of the author"
-              width={500}
-              height={500}
+              className="styledImage"
+              height={150}
+              width={300}
               />
-            </div>
           </div>
         </div>
       </div>

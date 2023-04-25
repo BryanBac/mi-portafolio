@@ -54,7 +54,7 @@ export default function RecentProyects() {
               <Image
                 src="/Videojuego.png"
                 alt="Picture of the author"
-                width={500}
+                width={480}
                 height={200}
               />
             </div>
@@ -82,7 +82,7 @@ export default function RecentProyects() {
             <Image
                 src="/C1.png"
                 alt="Picture of the author"
-                width={500}
+                width={480}
                 height={200}
               />
             </div>
@@ -116,7 +116,7 @@ export default function RecentProyects() {
               <Image
                 src="/C2.png"
                 alt="Picture of the author"
-                width={500}
+                width={480}
                 height={200}
               />
             </div>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Menu() {
   return (
@@ -11,7 +12,12 @@ export default function Menu() {
           <p>Proyectos Recientes</p>
         </Link>
         <Link href="#" className="foto">
-          Holi
+        <Image
+                src="/yo.jpg"
+                alt="Picture of the author"
+                width={80}
+                height={70}
+              />
         </Link>
         <Link href="/blog" className="botones">
           <p>Blog</p>
