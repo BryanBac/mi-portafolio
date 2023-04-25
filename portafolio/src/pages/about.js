@@ -1,6 +1,7 @@
 import Head from "next/head";
 import LoginBar from "@/pages/login_bar";
 import Menu from "@/pages/menu";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -59,7 +60,12 @@ export default function About() {
           </div>
           <div>
             <div>
-              <img src="" alt="No se encontró" />
+              <Image
+              src="/maxresdefault.jpg"
+              alt="Picture of the author"
+              width={500}
+              height={500}
+              />
             </div>
           </div>
         </div>

@@ -4,6 +4,7 @@ import Menu from "@/pages/menu";
 import GitContainer from "@/components/git-container";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function RecentProyects() {
   return (
@@ -49,7 +50,14 @@ export default function RecentProyects() {
               funcionalidades de jugabilidad del juego. Aunque siempre que
               alguien necesitaba ayuda en algo se apoyaba con lo que se pudiese.
             </h4>
-            <div className="imagenesContainer"></div>
+            <div className="imagenesContainer  centrar">
+              <Image
+                src="/Videojuego.png"
+                alt="Picture of the author"
+                width={500}
+                height={200}
+              />
+            </div>
             <div className="centrar  input">
               <h2>Filósofos Comelones</h2>
             </div>
@@ -70,7 +78,14 @@ export default function RecentProyects() {
               mientras que los demás desarrolladores trabajaron el algoritmo del
               programa.
             </h4>
-            <div className="imagenesContainer"></div>
+            <div className="imagenesContainer centrar">
+            <Image
+                src="/C1.png"
+                alt="Picture of the author"
+                width={500}
+                height={200}
+              />
+            </div>
             <div className="centrar  input">
               <h2>IA Clasificadora de Ropa</h2>
             </div>
@@ -97,7 +112,14 @@ export default function RecentProyects() {
               a los datos captados en cámara para poder ajustarse a los
               parámetros, se verificó la información obtenida.
             </h4>
-            <div className="imagenesContainer"></div>
+            <div className="imagenesContainer  centrar">
+              <Image
+                src="/C2.png"
+                alt="Picture of the author"
+                width={500}
+                height={200}
+              />
+            </div>
           </div>
         </div>
       </div>
