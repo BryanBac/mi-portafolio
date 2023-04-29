@@ -6,10 +6,10 @@ export default function Menu() {
     <div className="menuContainer">
       <div className="menu">
         <Link href="/about" className="botones">
-          <p>Sobre Mi</p>
+          <p className="texto">Sobre Mi</p>
         </Link>
         <Link href="/recent-proyects" className="botones">
-          <p>Proyectos Recientes</p>
+          <p className="texto">Proyectos Recientes</p>
         </Link>
         <Link href="#" className="foto">
         <Image
@@ -20,10 +20,10 @@ export default function Menu() {
               />
         </Link>
         <Link href="/blog" className="botones">
-          <p>Blog</p>
+          <p className="texto">Blog</p>
         </Link>
         <Link href="/education" className="botones">
-          <p>Educación</p>
+          <p className="texto">Educación</p>
         </Link>
       </div>
     </div>

@@ -22,7 +22,7 @@ export default function About() {
                 <h3>¿Quien Soy?</h3>
               </div>
               <div className="inputAbout">
-                <div className="ocuparTodoDiv input">
+                <div className="ocuparTodoDiv input proyectosRecientes">
                   Soy alguien bastante sociable, me encanta relacionarme con las
                   personas y trabajo muy bien con ellas, siempre he sido alguien
                   muy trabajador, y cuando suelo encontrarme con una dificultad
@@ -33,7 +33,7 @@ export default function About() {
                 <h3>Mi experencia</h3>
               </div>
               <div className="inputAbout">
-                <div className="ocuparTodoDiv input">
+                <div className="ocuparTodoDiv input proyectosRecientes">
                   Trabajo como Freelance (2023)
                   <br></br>Miembro de equipo de desarrollo en CRSAPP trabajando
                   en conjunto con Villanova University (2021-2022) <br></br>
@@ -48,7 +48,7 @@ export default function About() {
                 <h3>Informaión de Contacto</h3>
               </div>
               <div className="inputAbout">
-                <div className="ocuparTodoDiv input">
+                <div className="ocuparTodoDiv input proyectosRecientes">
                   Email: bryanbacparedes@gmail.com<br></br>
                   Facebook: <a href="https://www.facebook.com/bryan.bac.79">Bryan Bac</a><br></br>
                   Linkedin: <a href="https://www.linkedin.com/in/bryan-paredes-8024b51b9/">Bryan Paredes</a><br></br>

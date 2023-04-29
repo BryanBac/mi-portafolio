@@ -114,6 +114,10 @@ a {
 .inputAbout {
   height: 30%;
 }
+.imgTargeta{
+  height: 20px;
+  width: 100%;
+}
 .loginContainer,
 .aboutContainer {
   display: grid;
@@ -171,6 +175,9 @@ input {
   overflow: auto;
 max-height: 70vh;
 }
+.texto{
+  font-size: 18px;
+}
 .Title,
 .Content {
   display: flex;
@@ -202,4 +209,9 @@ max-height: 70vh;
 .ocuparTodoDiv {
   width: 100%;
   height: 100%;
+}
+@media screen and (max-width: 480px) {
+  .texto{
+    font-size: 13px;
+  }
 }

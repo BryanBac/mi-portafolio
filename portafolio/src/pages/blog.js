@@ -1,8 +1,6 @@
 import Head from "next/head";
 import LoginBar from "@/pages/login_bar";
 import Menu from "@/pages/menu";
-import Tarjetas from "@/components/tarjetas";
-import Prismic from 'prismic-javascript';
 import { useEffect, useState } from "react";
 import BlogContainer from "@/components/blog-container";
 
@@ -42,8 +40,13 @@ export default function Blog() {
       <div>
         <LoginBar></LoginBar>
         <Menu></Menu>
-        <button type="" onClick={() =>
-          setEstado("true")}>activa</button>
+        <div className="centrar">
+          <button className="botones" type="" onClick={() =>
+            {
+              setEstado("true");
+              console.log(publicaciones)
+            }}>Mostrar Entradas</button>
+        </div>
         {estado == "true" && <BlogContainer lista={publicaciones}></BlogContainer>}
       </div>
     </>
