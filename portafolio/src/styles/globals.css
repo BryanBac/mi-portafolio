@@ -11,7 +11,7 @@ body {
 }
 
 body {
-  background: #191a52;
+  background: linear-gradient(to right, #2e30ad 0%, #1b1c71 65%, #191a52 100%);
 }
 
 a {
@@ -61,7 +61,7 @@ a {
   align-items: center;
   width: 192px;
   height: 66px;
-  background-color: rgba(25, 163, 82, 0.5);
+  background: linear-gradient(to right, rgba(105, 230, 157, 0.5) 0%, rgba(32, 228, 114, 0.5) 65%, rgba(25, 163, 82, 0.5) 100%);
   border: 1px solid #19a352;
 }
 .cardContainer {
@@ -70,7 +70,7 @@ a {
 }
 .cardFirst {
   width: 100%;
-  background-color: rgba(25, 163, 82, 0.15);
+  background: linear-gradient(to right, rgba(105, 230, 157, 0.15) 0%, rgba(32, 228, 114, 0.15) 65%, rgba(25, 163, 82, 0.15) 100%);
 }
 .cardSecond {
   width: 100%;
@@ -107,7 +107,7 @@ a {
 }
 
 .input {
-  background-color: rgba(25, 163, 82, 0.15);
+  background: linear-gradient(to right, rgba(105, 230, 157, 0.15) 0%, rgba(32, 228, 114, 0.15) 65%, rgba(25, 163, 82, 0.15) 100%);
   color: white;
 }
 .inputAbout {

@@ -1,0 +1,7 @@
+{
+  "apiEndpoint": "https://bryan-portafolio.cdn.prismic.io/api/v2",
+  "repositoryName": "bryan-portafolio",
+  "adapter": "@slicemachine/adapter-next",
+  "libraries": ["./slices"],
+  "localSliceSimulatorURL": "http://localhost:3000/slice-simulator"
+}
