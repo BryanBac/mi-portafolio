@@ -24,6 +24,7 @@
     "eslint-config-next": "13.2.4",
     "next": "13.2.4",
     "octokit": "^2.0.14",
+    "prismic-javascript": "^3.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "^0.71.7"

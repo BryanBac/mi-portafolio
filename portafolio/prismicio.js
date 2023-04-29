@@ -34,7 +34,7 @@ const routes = [
  * @param {prismicNext.CreateClientConfig} config - Configuration for the Prismic client.
  */
 export const createClient = (config = {}) => {
-  const client = prismic.createClient(repositoryName, {
+  const client = prismic.createClient("https://bryan-portafolio.cdn.prismic.io/api/v2", {
     routes,
     ...config,
   });
