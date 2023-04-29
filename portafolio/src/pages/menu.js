@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Menu() {
   return (
-    <div>
+    <div className="menuContainer">
       <div className="menu">
         <Link href="/about" className="botones">
           <p>Sobre Mi</p>

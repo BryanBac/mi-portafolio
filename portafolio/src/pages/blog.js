@@ -4,30 +4,30 @@ import Menu from "@/pages/menu";
 import Tarjetas from "@/components/tarjetas";
 import Prismic from 'prismic-javascript';
 import { useEffect, useState } from "react";
-
-const apiEndpoint = "https://bryan-portafolio.cdn.prismic.io/api/v2/documents/search?ref=ZEtQZBEAACkAn1BG";
-const accessToken = "MC5aRXRSSFJFQUFDZ0FuMU9H.77-977-977-9be-_vU1H77-9WW9Z77-977-9ZO-_ve-_vVXvv71m77-977-9EO-_vULvv73vv73vv73vv70XE--_ve-_vQ";
-
+import BlogContainer from "@/components/blog-container";
 
 export default function Blog() {
-  const client = Prismic.client(apiEndpoint, { accessToken });
-  console.log(client);
   const [data, setData] = useState(null);
+  const [publicaciones, setPublicaciones] = useState();
+  const [estado, setEstado] = useState("false")
 
   useEffect(() => {
     const fetchData = async () => {
-      try {
-        const response = await fetch(
-          "https://bryan-portafolio.cdn.prismic.io/api/v2/documents/search?ref=ZEtQZBEAACkAn1BG"
-        );
-        const json = await response.json();
-        setData(json);
-        console.log(json)
-      } catch (error) {
-        console.error(error);
-      }
+      const response = await fetch(
+        "https://bryan-portafolio.cdn.prismic.io/api/v2/documents/search?ref=ZEtQZBEAACkAn1BG"
+      );
+      const json = await response.json();
+      setData(json["results"]);
+      const elementos = json["results"].map((item) => (
+        {
+          id: item.id,
+          title: item.data.title,
+          description: item.data.description,
+          cover: item.data.cover.url,
+        }
+      ));
+      setPublicaciones(elementos);
     };
-
     fetchData();
   }, []);
 
@@ -42,7 +42,9 @@ export default function Blog() {
       <div>
         <LoginBar></LoginBar>
         <Menu></Menu>
-        <Tarjetas></Tarjetas>
+        <button type="" onClick={() =>
+          setEstado("true")}>activa</button>
+        {estado == "true" && <BlogContainer lista={publicaciones}></BlogContainer>}
       </div>
     </>
   );

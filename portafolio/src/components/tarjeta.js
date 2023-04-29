@@ -1,18 +1,12 @@
 import Link from "next/link";
 
-export default function Tarjeta() {
+export default function Tarjeta({ uid, description }) {
   return (
-    <Link
-      href={{
-        pathname: "/article",
-        query: { name: "test" },
-      }}
-      className="LinkCard"
-    >
+    <div className="centrar">
+
       <div className="cardContainer">
-        <div className="cardFirst">as</div>
-        <div className="cardSecord">cascas</div>
+        <div className="cardFirst">{uid}</div>
       </div>
-    </Link>
+    </div>
   );
 }

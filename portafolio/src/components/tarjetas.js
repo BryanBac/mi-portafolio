@@ -1,9 +1,9 @@
 import Tarjeta from "./tarjeta"
 
-export default function Tarjetas(){
+export default function Tarjetas({uid, description}){
     return (
         <div className="centrar">
-          <Tarjeta></Tarjeta>
+          <Tarjeta uid={uid} description={description}></Tarjeta>
         </div>
     )
 }
