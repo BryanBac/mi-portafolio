@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Post from "@/pages/post/[id]";
 
-export default function Tarjeta({ uid, description, url }) {
+export default function Tarjeta({ uid, url }) {
   const ref = `/post/${uid}`
   return (
     <Link href={ref}>
