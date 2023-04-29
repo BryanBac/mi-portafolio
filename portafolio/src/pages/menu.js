@@ -11,7 +11,7 @@ export default function Menu() {
         <Link href="/recent-proyects" className="botones">
           <p className="texto">Proyectos Recientes</p>
         </Link>
-        <Link href="#" className="foto">
+        <Link href="https://www.youtube.com/@bryanbac6322/featured" className="foto">
         <Image
                 src="/yo.jpg"
                 alt="Picture of the author"

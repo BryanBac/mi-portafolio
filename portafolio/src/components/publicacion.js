@@ -2,12 +2,16 @@ export default function Publicacion({ lista, publi }) {
     const elementos = lista.map((item) => {
         if (item.title === publi) {
             return (
-                <div>
-                    <h1 key={item.id}>{item.title}</h1>
-                    <h1 key={item.id}>{item.description[0].text}</h1>
-                    <div>
-                        <img src={item.cover} alt="no se pudo mostrar" className="imgTarjeta" width="100%"
-                            height="50%" />
+                <div className="PubliNow">
+                    <div className="centrar all_width">
+                        <h1 key={item.id}>{item.title}</h1>
+                    </div>
+                    <div className="centrar">
+                        <h3 key={item.id + "text"}>{item.description[0].text}</h3>
+                    </div>
+                    <div className="centrar">
+                        <img src={item.cover} alt="no se pudo mostrar" className="imgTarjeta" width="40%"
+                            height="20%" />
                     </div>
                 </div>
             )
@@ -15,9 +19,7 @@ export default function Publicacion({ lista, publi }) {
     })
     return (
         <div className="proyectosRecientes">
-            <div className="aboutContainer">
-                {elementos}
-            </div>
+            {elementos}
         </div>
     );
 }

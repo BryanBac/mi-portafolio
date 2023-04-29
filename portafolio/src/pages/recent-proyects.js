@@ -25,9 +25,9 @@ export default function RecentProyects() {
         </div>
         <div className="centrar">
           <div className="blockEigthy m5">
-            <div className="centrar input">
+            <Link href="https://github.com/BryanBac/Videojuego-RPG"className="centrar input">
               <h2>Videojuego-RPG</h2>
-            </div>
+            </Link>
             <h3>Descripción</h3>
             <h4>
               Videojuego de peleas creado a partir del patrón de diseño de
@@ -58,9 +58,9 @@ export default function RecentProyects() {
                 height={200}
               />
             </div>
-            <div className="centrar  input">
-              <h2>Filósofos Comelones</h2>
-            </div>
+            <Link href="https://github.com/BryanBac/proyecto-filosofo-so"className="centrar input">
+              <h2>Filosofos Comelones</h2>
+            </Link>
             <h3>Descripción</h3>
             <h4>
               Utilización de Monitores para poder procesar de manera paralela
@@ -86,9 +86,9 @@ export default function RecentProyects() {
                 height={200}
               />
             </div>
-            <div className="centrar  input">
-              <h2>IA Clasificadora de Ropa</h2>
-            </div>
+            <Link href="https://github.com/BryanBac/IA-Clasificadora-de-Ropa"className="centrar input">
+              <h2>Ia Clasificadora de Ropa</h2>
+            </Link>
             <h3>Descripción</h3>
             <h4>
               Aplicación Web que utiliza una inteligencia artificial
