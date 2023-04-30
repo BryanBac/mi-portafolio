@@ -1,8 +1,8 @@
 export default function ScholarCard(props) {
   return (
     <div className="scholarContainer">
-      <div>
-        <img src={props.link} alt="Img"/>
+      <div className="centrar">
+        <img src={props.link} height="100px" alt="Img"/>
       </div>
       <div>
         <div>

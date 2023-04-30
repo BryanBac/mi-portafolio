@@ -30,31 +30,38 @@ a {
   margin: 8% 0%;
   justify-content: center;
 }
-.aboutRight{
+
+.aboutRight {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 5%;
   position: relative;
 }
+
 .articleContainer div:nth-child(1) {
   margin: 3% 10%;
 }
+
 .articleContainer div:nth-child(2) {
   margin: 5%;
 }
+
 .blockAbout {
   height: 80%;
   width: 80%;
   margin: 0;
 }
-.blockEigthy{
+
+.blockEigthy {
   display: block;
   width: 80%;
 }
+
 .blockAbout div {
   margin-top: 2%;
 }
+
 .botones {
   display: flex;
   justify-content: center;
@@ -65,18 +72,22 @@ a {
   border: 1px solid #19a352;
   border-radius: 10px;
 }
+
 .cardContainer {
   display: block;
   width: 70%;
 }
+
 .cardFirst {
   width: 100%;
   background: linear-gradient(to right, rgba(105, 230, 157, 0.15) 0%, rgba(32, 228, 114, 0.15) 65%, rgba(25, 163, 82, 0.15) 100%);
 }
+
 .cardSecond {
   width: 100%;
   background-color: rgba(217, 217, 217, 0.2);
 }
+
 .centrar {
   display: flex;
   justify-content: center;
@@ -87,21 +98,25 @@ a {
   display: block;
   margin: 3% 10%;
 }
+
 .Content div:nth-child(1) {
   margin: 3% 1%;
   width: 90%;
   border: 1px solid #000000;
   padding: 1%;
 }
+
 .foto {
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .grilla {
   display: grid;
 }
+
 .hijoRight,
 .blockAbout {
   display: block;
@@ -111,19 +126,24 @@ a {
   background: linear-gradient(to right, rgba(105, 230, 157, 0.15) 0%, rgba(32, 228, 114, 0.15) 65%, rgba(25, 163, 82, 0.15) 100%);
   color: white;
 }
+
 .inputAbout {
   height: 30%;
 }
-.imgTargeta{
+
+.imgTargeta {
   height: 20px;
   width: 100%;
 }
+
 .loginContainer,
-.aboutContainer {
+.aboutContainer,
+.about2 {
   display: grid;
   grid-template-columns: 50% 50%;
   row-gap: 5%;
 }
+
 .lgnBar {
   color: white;
   display: flex;
@@ -131,21 +151,28 @@ a {
   align-content: flex-end;
   padding: 2%;
 }
+
 .LinkCard {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.loginContainer {
+
+.loginContainer,
+.about2 {
   height: 100vh;
 }
-.loginLeft {
+
+.loginLeft,
+.aboutLeft2 {
   background: #191a52;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.loginRight {
+
+.loginRight,
+.aboutRight2 {
   background: white;
   color: black;
   display: flex;
@@ -153,34 +180,41 @@ a {
   align-items: center;
 }
 
-.m5{
+.m5 {
   margin-bottom: 5%;
 }
+
 .menu {
   display: grid;
   grid-template-columns: 15% 15% 15% 15% 15%;
   column-gap: 5%;
   width: 80%;
 }
+
 .menuContainer {
   display: flex;
   justify-content: center;
   width: 100%;
 }
+
 input {
   background-color: white;
   color: black;
 }
-.proyectosRecientes{
+
+.proyectosRecientes {
   overflow: auto;
-max-height: 70vh;
+  max-height: 70vh;
 }
-.PubliNow{
+
+.PubliNow {
   margin: 3% 0;
 }
-.texto{
+
+.texto {
   font-size: 18px;
 }
+
 .Title,
 .Content {
   display: flex;
@@ -188,33 +222,88 @@ max-height: 70vh;
   background: rgba(25, 163, 82, 0.1);
   border: 1px solid #000000;
 }
+
 .Title,
 .scholarContainer {
   width: 80%;
 }
+
 .scholarContainer div:nth-child(1) {
   background: rgba(25, 163, 82, 0.15);
 }
+
 .scholarContainer div:nth-child(2) {
   background: rgba(217, 217, 217, 0.5);
 }
+
 .scholarContainer {
   display: grid;
   grid-template-columns: 30% 70%;
   width: 100%;
   margin-bottom: 5%;
 }
-.styledImage{
+
+.styledImage {
   margin: 5% 0%;
   width: 50%;
   height: 100%;
 }
+
 .ocuparTodoDiv {
   width: 100%;
   height: 100%;
 }
+
 @media screen and (max-width: 480px) {
-  .texto{
+  .texto {
     font-size: 13px;
+  }
+
+  .about2 {
+    display: block;
+  }
+
+  .aboutLeft {
+    display: flex;
+    margin: 8% 0%;
+    justify-content: center;
+  }
+
+  .blockAbout {
+    height: 80%;
+    width: 80%;
+    margin: 0;
+    display: block;
+  }
+
+  .blockAbout div {
+    margin-top: 2%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .texto {
+    font-size: 13px;
+  }
+
+  .about2 {
+    display: block;
+  }
+
+  .aboutLeft {
+    margin: 0%;
+    height: 40%;
+  }
+
+  .blockAbout {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 5%;
+    MARGIN: 0;
+    height: 100%;
+  }
+
+  .inputAbout {
+    height: 50%;
   }
 }
