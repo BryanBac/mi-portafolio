@@ -12,7 +12,7 @@ export default function Blog() {
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
-        "https://bryan-portafolio.cdn.prismic.io/api/v2/documents/search?ref=ZEtQZBEAACkAn1BG"
+        process.env.NEXT_PUBLIC_PRISMIC_API
       );
       const json = await response.json();
       setData(json["results"]);
@@ -43,8 +43,7 @@ export default function Blog() {
         <div className="centrar">
           <button className="botones" type="" onClick={() =>
             {
-              setEstado("true");
-              console.log(publicaciones)
+              setEstado("true")
             }}>Mostrar Entradas</button>
         </div>
         {estado == "true" && <BlogContainer lista={publicaciones}></BlogContainer>}

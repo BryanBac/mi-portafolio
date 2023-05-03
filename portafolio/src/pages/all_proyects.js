@@ -11,7 +11,7 @@ export default function AllProyects() {
   useEffect(() => {
     async function obtener() {
       const response = await fetch(
-        `https://api.github.com/users/BryanBac/repos`
+        process.env.NEXT_PUBLIC_GIT_API,
       );
       const data = await response.json();
       setUser(data);

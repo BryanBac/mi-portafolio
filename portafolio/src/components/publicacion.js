@@ -2,7 +2,7 @@ export default function Publicacion({ lista, publi }) {
     const elementos = lista.map((item) => {
         if (item.title === publi) {
             return (
-                <div className="PubliNow">
+                <div key={item.id + "Publi"} className="PubliNow">
                     <div className="centrar all_width">
                         <h1 key={item.id}>{item.title}</h1>
                     </div>
